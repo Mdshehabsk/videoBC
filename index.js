@@ -9,8 +9,7 @@ const userChatRoute = require('./router/userChatRoute')
 const userDetails = require('./router/userDetails')
 const app = express();
 app.use(cors({
-  // origin:['http://localhost:3000','192.168.0.107:3000'],
-  origin:'*'
+  origin:process.env.CLIENT_URL
 }))
 
 
